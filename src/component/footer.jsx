@@ -1,6 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 
 function Footer() {
+    const [data,setData] = useState();
+
+    useEffect(() => {
+        axios.get(`https://jsonplaceholder.typicode.com/users`).then((response) => {
+          setData(response.data);
+          console.log(response.data)
+        }).catch((err) => {
+          console.log(err)
+        });
+      }, []);
     return (
         <>
             <div className="footerMain">
@@ -52,7 +63,29 @@ function Footer() {
 
                 </div>
             </div>
-
+            <table class=" table table-dark table-hover">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+    </tr>
+  </thead>
+  <tbody>
+    {data?.map((dt)=>
+     <tr>
+     <td>{dt.id}</td>
+     <td>{dt.name}</td>
+     <td>{dt.username}</td>
+   </tr>
+    )}
+   
+   
+      <th scope="row">3</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+  </tbody>
+</table>
         </>
     );
 }
