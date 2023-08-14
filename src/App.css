@@ -1,0 +1,574 @@
+ /* NAVBAR */
+ .border_btn{
+ border: 2px solid rgb(43, 24, 155) !important  ;
+ border-radius: 12px !important;
+ -webkit-border-radius: 12px !important;
+ -moz-border-radius: 12px !important;
+ -ms-border-radius: 12px !important;
+ -o-border-radius: 12px !important;
+ padding: 13px 24px 13px 24px !important;
+ color: rgb(43, 24, 155) !important;
+ font-weight: 500;
+}
+.btn_free{
+  background-color: rgb(43, 24, 155) !important;
+  color: white !important;
+  font-weight: 500 !important;
+  border-radius: 12px !important;
+  -webkit-border-radius: 12px !important;
+  -moz-border-radius: 12px !important;
+  -ms-border-radius: 12px !important;
+  -o-border-radius: 12px !important;
+}
+.avatar_Img{
+  width: 132px !important;
+  height: 42px !important;
+  margin-left: 10rem;
+}
+.selecte_background{
+  background: none !important;
+  border: none !important;
+}
+
+/* //////////////// */
+.dropbtn {
+  padding: 16px  !important;
+  font-size: 16px  !important;
+  border: none  !important;
+  background: none !important;
+  font-weight: 500 !important;
+  font-size: 18px;
+}
+
+.dropdown {
+  position: relative !important;
+  display: inline-block !important;
+}
+
+.dropdown-content {
+  display: none  !important;
+  position: absolute  !important;
+  background-color: #f1f1f1  !important;
+  width: 100%  !important;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2) !important;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black !important;
+  padding: 12px 16px !important;
+  text-decoration: none !important;
+  display: block !important;
+}
+
+.dropdown-content a:hover {background-color: #ddd !important;}
+
+.dropdown:hover .dropdown-content{display: block !important;}
+
+.main_box{
+  border: 1px solid rgb(43, 24, 155);
+  width: 30%;
+  height: 30%;
+  border-radius: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  -ms-border-radius: 9px;
+  -o-border-radius: 9px;
+  
+}
+.box_img{
+  height: 50%;
+    width: 50%;
+    padding: 7% 0% 8% 3%;
+}
+.main_box_P{
+  color: rgb(85, 85, 233);
+  margin-top: 8%;
+  font-weight: 500;
+  font-size: 18px;
+
+}
+.main_box_P:hover{
+  color: green !important;
+}
+.main_box:hover{
+  box-shadow: gray;
+}
+/* ///////////////////// */
+
+/* first page */
+.Main_img_div{
+  margin-left: 9rem;
+}
+
+.img_1{
+    width: 100px;
+    height: 100px;
+    top: 45px;
+    left: 30px;
+  position: relative;
+
+}
+.img_2{
+  width: 96px;
+  height: 96px;
+  position: absolute;
+}
+.img_3{
+  position: relative;
+  width: 84px;
+  height: 51px;
+  top: 4rem;
+  right: 2rem;
+}
+.plain_img{
+  width: 80px;
+  height: 70px;
+  position: relative;
+  top: 6rem;
+  /* left: 7rem; */
+}
+.plain_img_2{
+  width: 143px;
+  height: 104px;
+  position: relative;
+  left: 2rem;
+  margin-top: 12px;
+
+  
+}
+.Font_Build{
+  font-family: "Whereby Roslindale Display Condensed Regular", serif;
+  font-weight: 400;
+  font-size: 80px;
+  font-style: italic;
+  letter-spacing: 0px;
+  padding: 9rem 3rem 1rem 3rem;
+}
+.Font_Build_2{
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 150%;
+  /* padding: 0rem 10rem 5rem 4rem; */
+  letter-spacing: 1px;
+  /* white-space: nowrap */
+  padding:  0rem 2rem 1rem 6rem;
+}
+ /* style="opacity: 1; transform: translateX(0px) translateY(0px) scale(1) rotate(0.27deg) rotateX(0deg) rotateY(0deg) translateZ(0px);"><div style="position:absolute;border-radius:inherit;top:0;right:0;bottom:0;left:0" data-framer-background-image-wrapper="true"><img src="https://framerusercontent.com/images/p3L8L5aJpPbQObj4XJTGTL2izU.png" alt="" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:cover;image-rendering:auto"></div></div> */
+.img_4{
+  width: 96px;
+  height: 114px;
+  position: relative;
+  top: 3rem;
+}
+.plain_left_row{
+  width: 194px;
+  height: 149px;
+  position: absolute;
+  bottom: 0rem;  
+}
+.plain_left{
+  position: relative;
+  bottom: 2rem;
+  left: 8rem;
+  width: 80px;
+  height: 75px;
+}
+.img_5{
+  width: 96px;
+  height: 124px;
+  position: relative;
+  top:'6rem';
+}
+.img_box_5{
+  width: 172px;
+  height: 70px;
+  position: relative;
+  top: -2rem;
+  right: 59px;
+}
+.img_5_row{
+  width: 137px;
+  height: 104px;
+  bottom: 2rem;
+  right: 10rem;
+  position: absolute;
+}
+ .rocket {
+  transform: rotate(113deg);
+  z-index: 100 !important;
+  
+}
+/*  */
+ .rocket-holder {
+  animation:up-down infinite ;    
+  animation-direction: alternate;
+  animation-duration: 150ms;
+  z-index: 100 !important;
+ 
+}
+
+@keyframes up-down {
+  100% {transform: translateY(0px);}
+ 0% { transform: translateY(2px); -webkit-transform: translateY(2px); -moz-transform: translateY(2px); -ms-transform: translateY(2px); -o-transform: translateY(2px); }
+} 
+
+@keyframes rocket {
+  0% {transform:translateX(0px)}
+  100% {transform:translateX(-4000px)}
+}
+/*  */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Second Page css */
+.back{
+  background-color: #FFFFFF;
+  padding:51px 24px;
+}
+.header{
+   padding: 51px 24px;
+}
+
+.header_{
+  font-family:'Times New Roman', Times, serif;
+  font-size: 56px;
+  line-height: 100%;
+  letter-spacing: -2px;
+  text-align: center;
+}
+.image{
+  width: 100%;
+  height: 100%;
+  display: block;
+
+}
+.ancher{
+  justify-content: center;
+  display: flex;
+  color: #216654;
+}
+
+.para{
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: -.25px;
+  line-height: 150%; 
+}
+
+
+.head{
+  justify-content: center;
+  display: flex;
+}
+
+.card-footer{
+  background: none !important;
+  border-top: none !important;
+  margin-top: -17px;
+}
+
+
+/* Thirdpage css */
+
+.setter{
+  padding: 51px 24px;
+}
+
+.contain{
+  background-color: #F8DBD5;
+  width: 1100px;
+  height: 500px;
+}
+
+.card{
+  background: none !important;
+  border: none !important;
+}
+
+.header_1{
+  font-family: "Whereby Roslindale Display Condensed Regular", serif;
+  font-size: 56px;
+  line-height: 100%;
+  letter-spacing: -3px;
+}
+
+.but{
+  background-color: #2B189B;
+  color: #E9E7F4;
+  width: 150px;
+  font-size: 16px;
+  height: 50px;
+  border-radius: 12px;
+  border: none;
+  font-family: "Inter-Medium", "Inter", sans-serif;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.but:hover{
+   background-color: #13036e;
+}
+.card-img-top{
+  width: 90% !important;
+}
+
+/* pakang */
+
+.packangMain{
+    padding: 0px 150px;
+    /* background-color: aqua; */
+    background-color: rgb(255, 255, 255);
+}
+.packangSecondMain{
+    padding: 48px 64px;
+    /* background-color: beige; */
+}
+.easiestMainDiv h1{
+    font-size: 40px;
+    font-family: "Whereby Roslindale Display Condensed Regular", serif !important;
+    letter-spacing: -3px;
+    
+}
+.easiestMainDiv{
+    padding: 64px 0px;
+}
+.tryForFreeButton2 button{
+    width: 176px;
+    padding: 14px;
+    background:#2B189B;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 13px;
+
+
+}
+/* .tryForFreeButton2{
+    display: flex;
+    justify-content: center;
+} */
+
+/* companies */
+
+.mainCompanies{
+  padding: 88px 24px;
+  /* background-color: aquamarine; */
+}
+.companiesText h2{
+  font-size: 18px;
+  font-family: 'inherit';
+}
+.companiesLogoMain{
+  padding: 5px 150px;
+}
+.plane{
+  position: absolute;
+  border-radius: inherit;
+  margin-right: 1050px;
+}
+.companiesLogo img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-position: center center;
+  object-fit: contain;
+  image-rendering: auto;
+}
+
+/* Delightful */
+.ant{
+  position: absolute;
+  border-radius: inherit;
+  margin-left: 925px;
+}
+
+
+.ant img{
+  display: block;
+  width: 90px;
+  height:60px;
+  border-radius: inherit;
+  object-position: center center;
+  object-fit: cover;
+  image-rendering: auto;
+} 
+
+.calls{
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-position: center center;
+  object-fit: cover;
+  image-rendering: auto;
+}
+.containerCalls{
+  /* padding: 20px; */
+}
+.tryForFreeButton1 button{
+  width: 250px;
+  padding: 14px;
+  background:#2B189B;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 13px;
+
+
+}
+.tryForFreeButton1{
+  display: flex;
+  justify-content: center;
+}
+.cards{
+  padding: 2% 13%;
+  margin: 0px;
+}
+
+/* testimonial */
+
+.testimonialMain{
+  /* background-color: aquamarine; */
+  padding: 150px 220px;
+  border-radius: 15px;
+}
+.testimonialSecond{
+  position: relative;
+  /* padding: 48px 64px; */
+  background-color: #F8DBD5
+}
+.testimonialSecond img{
+  /* display: block; */
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-position: center center;
+  object-fit: cover;
+  image-rendering: auto;
+}
+.testiUpperLogos1{
+  position: absolute;
+  top: 50px;
+  left: 50px;
+} 
+.testiUpperLogos2{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+} 
+.testiUpperLogos3{
+  position: absolute;
+  top: 100px;
+  left: 45%;
+} 
+.testiUpperLogos4{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+} 
+.testiUpperLogos5{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+} 
+.testimonial{
+  position: absolute;
+  top: 250px;
+  padding: 0px 100px;
+  font-size: 48px;
+  line-height: 55px;
+  letter-spacing: -3px;
+  font-family: "Whereby Roslindale Display Condensed Regular", serif !important;
+
+}
+.testimonialIntro{
+  position: absolute;
+  top: 520px;
+  left: 40%;
+}
+.testiName{
+  line-height: 5px;
+}
+.carousel-indicators{
+  /* background-color: ; */
+  margin-bottom: 200px;
+  margin-top: 0px;
+}
+.carousel-indicators .active{
+  background-color: black !important;
+}
+.carousel-indicators button{
+  width: 8px !important;
+  height: 8px !important;
+  background-color: rgb(142, 117, 117) !important;
+  border-radius: 50px !important;
+}
+
+/* getstart */
+
+.mainStartedHeading{
+  align-items: center;
+  margin: auto;
+  
+}
+.startedHeading h2{
+  display: flex;
+  justify-content: center;
+  font-size: 48px !important;
+  font-family: "Whereby Roslindale Display Condensed Regular", serif !important;
+  /* word-spacing: 2px !important; */
+  letter-spacing: -3px;
+
+}
+.startedHeading{
+  height: auto !important;
+}
+.tryForFreeButton button{
+  width: 176px;
+  padding: 14px;
+  background:#2B189B;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 13px;
+
+
+}
+.tryForFreeButton{
+  display: flex;
+  justify-content: center;
+}
+
+
+/* footer */
+.footerMain{
+  padding: 60px 70px;
+  /* text-align: center; */
+}
+.footerHeading h3{
+  /* font-family: 'none'; */
+  color:#000000;
+  font-family: "Whereby Roslindale Display Condensed Regular", serif !important;
+
+ 
+
+}
+.footerHeading p{
+
+  margin-top : 20px !important;
+  font-size: 17px;
+  color:#000000;
+}
