@@ -1,7 +1,79 @@
-import React, { useState } from "react";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 
 
 function NavBar() {
+
+
+const [name , setName] = useState();
+const [editId , setEditId] = useState();
+const [data , setData] = useState();
+
+
+
+
+var getProduct = async()=>{
+  await axios.get(`http://localhost:3000/getproduct`).then((response) => {
+     setData(response.data);
+     console.log(response.data);
+     console.log(response.data)
+   }).catch((err) => {
+     console.log(err)
+   });
+ }
+
+ useEffect(() => {
+  getProduct();
+  }, []);
+
+
+const addProduct = () => {
+  var alldata = {
+    name: name,
+  }
+  {editId ? 
+    axios.put(`http://localhost:3000/editproduct/${editId}`,alldata).then((response) => {
+    console.log(response.data)
+    getProduct();
+    setName("");
+    setEditId("")
+
+  }).catch((err) => {
+    console.log(err)
+  })
+     :
+  axios.post(`http://localhost:3000/postproduct`,alldata).then((response) => {
+    console.log(response.data)
+    getProduct();
+    setName("");
+  
+  }).catch((err) => {
+    console.log(err)
+  });
+}
+
+
+
+
+}
+
+const deleteClick = async(id) => {debugger
+  await axios.delete(`http://localhost:3000/deleteproduct/${id}`).then((response) => {
+    console.log(response.data)
+    getProduct();
+  }).catch((err) => {
+    console.log(err)
+  });
+}
+
+
+
+const editClick = async(id) => {
+  setName(id.name);
+  setEditId(id._id)
+}
+
+
     return ( 
         <>
             <nav class="navbar navbar-expand-lg shadow navbar-light  " style={{padding:'24px',width:'100%',backgroundColor:'white', top: "0"
@@ -13,31 +85,37 @@ function NavBar() {
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav  mb-2 mb-lg-0" style={{fontSize:'20px', gap:'5rem',marginLeft:'7rem'}}>
-        
-      {/* <select class="selecte_background" >
-      <option selected>products</option>
-      <option value="1">One</option>
-      <option value="2">Two</option>
-      <option value="3">Three</option>
-</select> */}
-
- 
-  {/* <div className="dropdown">
-     <div className="dropbtn">
-      Product
-    </div>
-  </div> */}
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" style={{width:"100%"}}>
+      <ul class="navbar-nav  mb-2 mb-lg-0" style={{fontSize:'20px', gap:'5rem',marginLeft:'7rem',width:"100%"}}>
+      
   
-<div className="dropdown">
+<div className="dropdown" style={{width:"100%"}} >
   <button className="dropbtn"   
       >Products</button>
  
-  <div className="dropdown-content full_drop">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
+  <div className="dropdown-content full_drop w-100">
+   {data?.map((dt)=>
+   <div className="row"> 
+<div className="col-6">
+<a href="#">{dt.name}</a>
+</div>
+<div className="col-3">
+<button onClick={()=>editClick(dt)}>🖊️</button>
+</div>
+<div className="col-3">
+<button onClick={()=>deleteClick(dt._id)}>❌</button>
+</div>
+   </div>
+    
+   )}
+
+    <div >
+    <div class="form-group mt-3" >
+                            <label for="name" className="text-danger">Product name</label>
+                            <input value={name} onChange={(e)=>setName(e.target.value)} type="text" class="form-control" id="name" placeholder="name"/>
+                        </div>
+                        <button onClick={addProduct} type="button" class="btn btn-primary mt-2"> {editId ? "Edit ": "Add" }</button>
+    </div>
   </div>
 </div>
  
